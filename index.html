@@ -6,7 +6,7 @@
     <title>HealthPick</title>
 </head>
 <body>
-    <h1>Health Insurrance Day</h1>
+    <!--<h1>Health Insurrance Day</h1>
     <h2>Health Insurrance Day</h2>
     <h3>Health Insurrance Day</h3>
     <h4>Health Insurrance Day</h4>
@@ -29,19 +29,270 @@
 
     <form action="/submit-form" method="post">
         
-        <label for="username">Username:</label>
+       
+        <label for="username">Username: </label>
 
         <input type="text"
          id="username"
-         placeholder="Enter your username">
+         placeholder="Enter your username"
+         required>
 
-         <label for="password">Password:</label>
+         <br><br>
+
+         <label for="password">Password: </label>
 
          <input type="password"
           id="password"
-          placeholder="Enter your password">
+          placeholder="Enter your password"
+          required>
+       
+          <br><br>
+
+          <label for="email">Email: </label>
+
+          <input type="email" 
+          id="email" 
+          name="email"
+          placeholder="example@gmail.com"
+          required>
+
+          <br><br>
+
+
+          <label for="quantity">Quantity: </label>
+
+          <input type="number"
+          id="quantity" min="1" 
+          max="11"
+          required>
+
+          <br><br>
+
+          <label for="phone">Phone Number: </label>
+
+          <input type="tel"
+          id="phone"
+          name="phone" 
+          pattern="[0-9]" 
+          minlength="11"
+          maxlength="11"
+          placeholder="xxx-xxx-xxx-xx"
+          required>
+
+          <br><br>
+
+          
+          <input type="checkbox" 
+          id="checkbox"
+          name="subcribe">
+
+          <label for="checkbox">Subcribe to Newsletter</label>
+
+          <br><br>
+
+          <input type="radio"
+          id="radio"
+          value="male">
+
+          <label for="radio">Male</label>
+
+          <input type="radio"
+          id="radio"
+          value="female">
+
+          <label for="radio">Female</label>
+
+
+          <br><br>
+
+          <label for="date">Date of birth: </label>
+
+          <input type="date" id="date"
+          name="date">
+
+          <br><br>
+
+          <label for="file">Select a file: </label>
+
+          <input type="file" id="file" 
+          accept=".jpeg, .png, .jpg, .svg"
+          name="file">
+
+          <br><br>
+
+          <button type="submit">Login</button>
+
+          <br><br><br>
+
+          <button type="button">General</button>
+          <input type="button" value="submit">
+
+          
+
+    </form>-->
+    
+    <h1>Authentication</h1>
+    
+    <form action="submit" method="post">
+    <label for="username1">Fullname: </label>
+
+        <input type="text"
+         id="username1"
+         placeholder="Enter your full name"
+         required>
+
+         <br><br>
+
+         
+
+          <label for="email1">Email: </label>
+
+          <input type="email" 
+          id="email1" 
+          name="email"
+          placeholder="example@gmail.com"
+          required>
+
+          <br><br>
+
+
+          
+
+          <label for="phone1">Phone Number: </label>
+
+          <input type="tel"
+          id="phone1"
+          name="phone" 
+          pattern="[0-9]" 
+          minlength="11"
+          maxlength="11"
+          placeholder="xxx-xxx-xxx-xx"
+          required>
+
+          <br><br>
+
+          <label for="location1">Location: </label>
+
+        <input type="text"
+         id="location1"
+         placeholder="Enter your Country"
+         required>
+
+         <br><br>
+
+          
+
+          <label for="password">Password: </label>
+
+         <input type="password"
+          id="password"
+          placeholder="Enter your password"
+          required>
+       
+         
+          <br><br>
+
+          <button type="submit">Login</button>
+
+        </form>
+
+
+
+        <h1>Bank Verification</h1>
+        <br>
+    <form action="submit" method="post">
+        <label for="username">Fullname: </label>
+
+        <input type="text"
+         id="username"
+         placeholder="Enter your full name"
+         required>
+
+         <br><br>
+
+         <label for="bvn">BVN: </label>
+
+          <input type="tel"
+          id="bvn"
+          minlength="11" 
+          maxlength="11"
+          required>
+
+          <br><br>
+
+
+         
+
+          <label for="email">Email: </label>
+
+          <input type="email" 
+          id="email" 
+          name="email"
+          placeholder="example@gmail.com"
+          required>
+
+          <br><br>
+
+          <label for="nin">NIN: </label>
+
+          <input type="tel"
+          id="nin"
+          minlength="11" 
+          maxlength="11"
+          required>
+
+          <br><br>
+
+          <label for="location">Location: </label>
+
+        <input type="text"
+         id="location"
+         placeholder="Enter your Country"
+         required>
+
+         <br><br>
+
+
+
+          
+
+          <label for="phone">Phone Number: </label>
+
+          <input type="tel"
+          id="phone"
+          name="phone" 
+          pattern="[0-9]" 
+          minlength="11"
+          maxlength="11"
+          placeholder="xxx-xxx-xxx-xx"
+          required>
+
+          <br><br>
+
+          <label for="file">Upload your picture: </label>
+
+          <input type="file" id="file" 
+          accept=".jpeg, .png, .jpg, .svg"
+          name="file">
+
         
+       
+         
+          <br><br>
+
           <button type="submit">Submit</button>
+
+
+
+
+
+
+
+
+
+
+
+
 
     </form>
 
