@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elvis Ngerem - Portfolio</title>
+    <style>
+        body {
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        a, h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        .bio {
+            margin-bottom: 20px;
+        }
+        .skills, .projects {
+            margin-top: 20px;
+        }
+        .project {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Elvis Ngerem</h1>
+        <h2>Electrical Engineer| Fullstack Developer</h2>
+        <div class="my_details">
+            <h2>Contact Info</h2>
+            <hr>
+            <ul>
+                <li>+234 8105814138</li>
+                <li>elvisngerem@gmail.com</li>
+                <li>Plot H140 Army Estate, Kubwa, Abuja, Nigeria.</li>
+                <li><a href="http://www.linkedin.com/in/elvis-ngerem-1204aa206">Linkedin</a></li>
+                <li><a href="https://github.com/Ngelvis">GitHub</a></li>
+            </ul>
+        </div>
+        <div class="bio">
+            <h2>Bio</h2>
+            <hr>
+            <em>
+                <p>
+                    As a frontend developer with a master's degree in electrical engineering, I bring a unique blend of technical expertise and creativity to my work. 
+                    My background in electrical engineering has equipped me with strong problem-solving skills and a deep understanding of technology.
+                </p>
+
+                <p>
+                    I am passionate about creating elegant and user-friendly web experiences. With proficiency in HTML, CSS, JavaScript, and various frontend frameworks, 
+                    I strive to build responsive and visually appealing websites that meet both user needs and business objectives.
+                </p>
+                
+                <p>
+                    My journey into frontend development began during my graduate studies, where I discovered my passion for web development while working on projects 
+                    that involved designing and implementing user interfaces for embedded systems.
+                </p>
+         
+            </em>
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <hr>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>AutoCAD</li>
+                <li>Matlab</li>
+            </ul>
+            <a href="https://drive.google.com/file/d/1xdUqJSkQ69TGbCXmsXqb_wb8roUt55OO/view?usp=drive_link" id="resume">Download CV</a>
+        </div>
+        <div class="projects">
+            <h2>Projects</h2>
+            <hr>
+            <div class="project">
+                <h3>Recipix</h3>
+                <p>
+                    Recipix is a cross-platform mobile application that allows a user to virtually keep track of items in their fridge. 
+                    Users may add items from their fridge via barcode scanning, and the app generates a list of recipes they can create based on those ingredients. 
+                    Users may filter recipes based on specific ingredients. Recommended recipes show step-by-step instructions as well as any missing ingredients. 
+                    This app was created in 2.5 weeks in an agile team of 4 for a capstone project.
+                </p>
+
+                <p>
+                    Technologies: JavaScript, React Native, Redux, Expo, Sequelize, PostgreSQL, Node.js, Express, Edamam API, Spoonacular API
+                </p>
+                <a href="https://drive.google.com/file/d/1QceqmzA31pVsa24a7MS6Amsn5-HxQkdr/view?usp=drive_link">View</a>
+            </div>
+            <div class="project">
+                <h3>Race Hopper</h3>
+                <p>
+                    Race Hopper is a 3D platform video game built with the WebGL API designed to be played in the web browser. 
+                    Players must hop over obstacles to advance to the next level. Jewels may be collected to obtain a better score. 
+                    This game was created solo in 2 days for a hack-a-thon.
+                </p>
+
+                <p>
+                    Technologies: C#, Unity, WebGL
+                </p>
+                <a href="https://drive.google.com/file/d/10ZAoP56I72KK-oZld7l0WGn5P_RJwkDA/view?usp=drive_link">View</a>
+            </div>
+            
+        </div>
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <hr>
+            <p>I would love to hear from you and any project you would like 
+            me to help you with. Kindly fill out the form below and I would get 
+            back to you as soon as possible.</p>
+            <div class="form">
+                <form action="submit" method="post" >
+                    <label for="username1">Full name: </label>
+
+                    <input type="text"
+                    id="username1"
+                    placeholder="Enter your full name"
+                    required>
+
+                    <br><br>
+
+                    <label for="email1">Email: </label>
+
+                    <input type="email" 
+                    id="email1" 
+                    name="email"
+                    placeholder="example@gmail.com"
+                    required>
+
+                    <br><br>
+
+                    <label for="phone1">Phone number: </label>
+
+                    <input type="tel"
+                    id="phone1"
+                    name="phone" 
+                    pattern="[0-9]" 
+                    minlength="11"
+                    maxlength="11"
+                    placeholder="xxx-xxx-xxx-xx"
+                    required>
+
+                    <br><br>
+
+                    <label for="location1">Location: </label>
+
+                    <input type="text"
+                    id="location1"
+                    placeholder="Enter your country">
+
+                    <br><br>
+
+                    <label for="message">Message: </label>
+
+                    <input type="textarea"
+                    id="message"
+                    placeholder="Type text"
+                    minlength="50"
+                    maxlength="300">
+
+                    <br><br>
+
+                    <label for="file">Upload a file: </label>
+
+                    <input type="file" id="file" 
+                    accept=".jpeg, .png, .jpg, .svg, .pdf, .docx, .ppt"
+                    name="file">
+
+                    <br><br>
+
+                    <input type="checkbox" 
+                    id="checkbox"
+                    name="subcribe">
+                    <label for="checkbox">Subcribe to Newsletter</label>
+                    <br><br>
+
+                    <button type="submit">Send</button>
+
+
+
+                </form>
+            </div>
+            
+
+        </div>
+    </div>
+</body>
+</html>
