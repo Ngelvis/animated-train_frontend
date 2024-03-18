@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#text1 {
+    font-family: cursive;
+    font-size: 15px;
+    color: crimson;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.textgroup {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: blue;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*div p, h2{
+    background-color:grey;
+}*/
+
+#text4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgb(96, 156, 50);
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+ul li {
+    list-style-type: none;
+    color: blue;
+    ;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 15px;
+    list-style-type: none;
+    background-color: rgb(241, 113, 113);
+}
+
+nav ul li{
+    /*margin-right: 10;*/
+    justify-content: space-between;
+
+}
+
+nav ul li a {
+    background-color: rgb(175, 172, 172);
+    text-decoration: none;
+    color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover{
+
+    background-color: rgb(63, 61, 61);
+
+}
