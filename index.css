@@ -1,70 +1,176 @@
 body {
-    margin: 0;
-    padding: 0;
+      margin: 0;
+      padding: 0;
+      background-color: #FFFFFF;
 }
 
-#text1 {
-    font-family: cursive;
-    font-size: 15px;
-    color: crimson;
-    font-weight: 900;
-    font-style: normal;
-}
+ul > li {
 
-.textgroup {
-
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: blue;
-    font-weight: 300;
-    font-style: normal;
-}
-
-/*div p, h2{
-    background-color:grey;
-}*/
-
-#text4 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 15px;
-    color: rgb(96, 156, 50);
-    font-weight: 300;
-    font-style: normal;
+      list-style-type: none;
+      font-style: normal;
 }
 
 
-ul li {
-    list-style-type: none;
-    color: blue;
-    ;
+/* div {
+      height: 500px;
+      padding: 10px;
+      border: 0px solid #333333;
+      margin: 0px;
+}
+
+#hero-container {
+      background-color: #fbfbfd;
 }
 
 
-nav ul{
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 15px;
-    list-style-type: none;
-    background-color: rgb(241, 113, 113);
+#hero2-container {
+      background-color: #000000;
 }
 
-nav ul li{
-    /*margin-right: 10;*/
-    justify-content: space-between;
 
+#hero3-container {
+      display: flex;
+      flex-direction: row;
+      height: fit-content;
+      padding: 5px;
+      margin: 0px;
+      gap: 5px;
+}
+ */
+/* 
+.division {
+
+      width: 50vw;
+}
+
+#division1 {
+      background-color: #fbfbfd;
+    
+}
+
+#division2 {
+
+      background-color: #000000;
+} */
+
+
+
+
+nav ul li {
+
+      display: inline-block;
+      justify-content: space-between;
 }
 
 nav ul li a {
-    background-color: rgb(175, 172, 172);
-    text-decoration: none;
-    color: red;
-    padding: 10px;
-    border-radius: 10px;
+
+      text-decoration: none;
+      color: #000000;
+      padding: 10px;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
 
-    background-color: rgb(63, 61, 61);
+      background-color: #ddd;
+}
 
+/* First Grid Type */
+.grid-container{
+
+      display:grid; 
+      grid-template-rows: 500px 500px;
+
+      
+}
+
+
+.grid_item{
+      border: 1px solid black;
+      padding: 10px;
+}
+
+#grid_1{
+
+      background-image: url(./img/woman-doctor.jpg);
+      
+}
+
+/* SECOND GRID APPLICATION */
+
+/* .container{
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+} */
+
+/* .top, .bottom{
+      
+      display: flex;
+      
+} */
+
+/* .box{
+      border: 1px solid black;
+      width: 50%;
+      padding: 10px;
+      height: 100vh;
+} */
+
+/* CSS FLOAT  */
+
+.float_container {
+      flex-direction: column;
+      height: 40vh;
+}
+
+
+.floated {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+      float: right;
+}
+
+
+.content{
+      margin-right: 120px;
+}
+
+.positioned {
+      background-color: aqua;
+      top: 50px;
+      left: 200px;
+      width: 100px;
+      height: 100px;
+      position: sticky;
+
+}
+
+.positioned_2 {
+      background-color: blueviolet;
+      top: 50px;
+      left: 100px;
+      width: 100px;
+      height: 100px;
+      position: fixed;
+
+}
+
+.box_animation {
+      width: 100px;
+      height: 100px;
+      background-color: chartreuse;
+      animation: grow-shrink 2s infinite alternate;
+      margin-left: 300px;
+}
+
+@keyframes grow-shrink {
+
+      0%{
+            transform: scale(1);
+      }
+
+      100% {
+            transform: scale(1.5);
+      }
 }
