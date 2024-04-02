@@ -1,168 +1,135 @@
-body {
-      margin: 0;
-      padding: 0;
-      background-color: #FFFFFF;
-}
-
-ul > li {
-
-      list-style-type: none;
-      font-style: normal;
-}
 
 
-/* div {
-      height: 500px;
+/* FIRST TYPE OF GRID */
+
+
+
+.grid-item {
+
+      border: 1px solid #000000;
       padding: 10px;
-      border: 0px solid #333333;
-      margin: 0px;
+
 }
 
-#hero-container {
-      background-color: #fbfbfd;
+#grid1{
+
+      background-image: url('./img/w2.jpg');
 }
 
-
-#hero2-container {
-      background-color: #000000;
-}
-
-
-#hero3-container {
-      display: flex;
-      flex-direction: row;
-      height: fit-content;
-      padding: 5px;
-      margin: 0px;
-      gap: 5px;
-}
- */
-/* 
-.division {
-
-      width: 50vw;
-}
-
-#division1 {
-      background-color: #fbfbfd;
-    
-}
-
-#division2 {
-
-      background-color: #000000;
-} */
-
-
-
-
-nav ul li {
-
-      display: inline-block;
-      justify-content: space-between;
-}
-
-nav ul li a {
-
-      text-decoration: none;
-      color: #000000;
-      padding: 10px;
-}
-
-nav ul li a:hover {
-
-      background-color: #ddd;
-}
-
-/* First Grid Type */
-.grid-container{
-
-      display:grid; 
-      grid-template-rows: 500px 500px;
-
-      
+.myparagraph{
+      font-family: monospace;
+      color: brown;
+      font-size: x-large;
 }
 
 
-.grid_item{
-      border: 1px solid black;
-      padding: 10px;
+.highlight{
+
+      font-family: monospace;
+      color: orangered;
+      font-size: x-large;
+      text-align: center;
 }
 
-#grid_1{
 
-      background-image: url(./img/woman-doctor.jpg);
-      
-}
 
-/* SECOND GRID APPLICATION */
 
-/* .container{
+
+/* SECOND APPLICATION OF GRID */
+
+
+.container{
+
       display: flex;
       flex-direction: column;
       height: 100vh;
-} */
 
-/* .top, .bottom{
-      
+}
+
+
+.top-row, .bottom-row{
+
+      /* arranges horizontally */
+      display: flex; 
+
+}
+
+
+.box {
+
+width: 50%;
+border: 1px solid #000000;
+padding: 10px;
+height: 100vh;
+
+}
+
+
+
+/* CSS FLOAT */
+
+
+.float-container{ 
+
       display: flex;
-      
-} */
 
-/* .box{
-      border: 1px solid black;
-      width: 50%;
-      padding: 10px;
-      height: 100vh;
-} */
-
-/* CSS FLOAT  */
-
-.float_container {
       flex-direction: column;
       height: 40vh;
+      align-items: center;
+      justify-content: center;
+
+
+
 }
 
 
 .floated {
+
       width: 100px;
       height: 100px;
-      background-color: black;
-      float: right;
-}
+      background-color: #000000;
+      float:right
 
+}
 
 .content{
-      margin-right: 120px;
+margin-right: 120px;
 }
+
 
 .positioned {
+
       background-color: aqua;
       top: 50px;
-      left: 200px;
+      left: 100px;
       width: 100px;
       height: 100px;
-      position: sticky;
-
+      position: relative;
 }
 
-.positioned_2 {
-      background-color: blueviolet;
+
+.positioned2 {
+
+      background-color: red;
       top: 50px;
       left: 100px;
       width: 100px;
       height: 100px;
       position: fixed;
-
 }
 
-.box_animation {
+
+.Box-animation{
+
       width: 100px;
       height: 100px;
-      background-color: chartreuse;
-      animation: grow-shrink 2s infinite alternate;
+      top: 50px;
+      left: 700px;
       margin-left: 300px;
+      background-color: brown;
+      animation: grow-shrink 2s infinite alternate;
 }
+
 
 @keyframes grow-shrink {
 
@@ -171,6 +138,13 @@ nav ul li a:hover {
       }
 
       100% {
+
             transform: scale(1.5);
       }
+}
+
+
+.textT {
+      font-size: 72px;
+      line-height: 1;
 }

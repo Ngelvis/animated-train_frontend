@@ -4,450 +4,76 @@
 
 
 <head>
-
-      <title>HealthPick</title>
-      <link rel="stylesheet" href="index.css" />
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="https://cdn.tailwindcss.com"></script>
-      
-
+      <title>HealthPick</title>
+      <!-- <link rel="stylesheet" href="index.css" /> -->
 </head>
 
-<body class="m-0 p-0 bg-green">
+<body class="m-0 p-0 bg-white">
 
       <!-- Navigate -->
-            <nav>
-                  <ul class="list-none not-italic 
-                              m-0 p-4 flex justify-between border-gray-900 
-                              border border-gray-900">
-                        <li><a href="#" class="hover:bg-cyan">Home</a></li>
+            <nav class="fixed top-0 w-full overflow-hidden">
+                  <ul class="list-none not-italic m-0 p-4 flex justify-between bg-white border border-gray-500 font-mono">
+                        <li><a href="#home" class="bg-white hover:bg-gray-300 p-2">Home</a></li>
             
-                        <li><a href="#" class="hover:bg-white">Doctors</a></li>
-                        
-                        <li><a href="#" class="hover:bg-white">About</a></li>
-                        
-                        <li><a href="#" class="hover:bg-white">Contact</a></li>
+                        <li><a href="#doctors" class="bg-white hover:bg-gray-300 p-2">Doctors</a></li>
+            
+                        <li><a href="#about" class="bg-white hover:bg-gray-300 p-2">About</a></li>
+            
+                        <li><a href="#contact" class="bg-white hover:bg-gray-300 p-2">Contact</a></li>
             
                   </ul>
 
             </nav>
 
-            
-                  <!-- First Container
-                  <div id="hero-container">
 
+      <!--  container1 -->
+      <div class="grid grid-flow-row h-screen mt-14">
 
-                  </div> -->
+            <div class="border border-gray-500" id="home">
+                  <p class="">Home</p>
+                  
 
-                  <!-- Second Container -->
-                  <!-- <div id="hero2-container">
-
-
-                  </div>
-
-
-                   Third Container 
-                  <div id="hero3-container">
-
-                        <div class="division" id="division1">
-
-                        </div>
-
-                        <div class="division" id="division2">
-
-                        </div>
-
-                  </div>
-
-
-                  4th Container 
-                  <div id="hero3-container">
-
-                  <div class="division" id="division1">
-
-                  </div>
-
-                  <div class="division" id="division2">
-
-                  </div>
-
-                  </div> -->
-
-      <!-- 5th container -->
-
-      
-      <div class="grid grid-rows-[500px_minmax(900px,_1fr)_100px] ">
-            <div class="grid_item" id="grid_1"></div>
-            <div class="italic  ">
-                  <p class="hover:text-blue-600">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Facere fugiat delectus porro accusamus repellendus dolores ipsa eius asperiores quis in! Voluptatibus quas ducimus porro. Maxime illo expedita sed possimus ea?
-                  </p>
-                  <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur facere excepturi,
-                         velit nisi blanditiis debitis aliquam, nihil dolor possimus libero aut omnis voluptatum amet rerum. Sapiente eum neque blanditiis recusandae?
-                  </p>
             </div>
             
-
+            <div class="border border-gray-500" id="doctors">
+                  <p class="myP">Doctors</p>
+            </div>
+              
       </div>
 
-      <div class="container">
-
-            <div class="font-sans ">
-
-                  <div class="box"><P class="hover:font-serif">My Tailwind test</P></div>
-                  <div class="box"></div>
+      <div class="grid grid-flow-col h-screen">
+            <div class="border border-gray-500 rounded-b-3xl" id="about">
+                  <p class="highlight">About</p>
             </div>
 
-            <div class="bottom">
-                  <div class="box"></div>
-                  <div class="box"></div>
+            <div class="border border-gray-500 rounded-b-3xl" id="contact">
+                  <p>Contact</p>
             </div>
 
       </div>
+      
+      
+      <!-- Float Container -->
+      <div class="float-container text-center">
 
-      <!-- The Float Container -->
-      <div class="float_container">
-            <!-- <div class="floated">Floated Box</div>
-            <div class="content">Content</div>
-            <div class="positioned">Position Box</div>
-            <div class="positioned_2">Position Box 2</div>
-            <div class="box_animation">Box</div> -->
+            <p id="myparagraph">This is the first content from html</p>
+      
+            <button id="mybutton">Click me!</button>
 
-            <!-- <p class="test">Testing tailwindcss</p> -->
-      </div>
+            <div id="testdiv">
+
+                  <p class="textp">This is a test paragraph</p>
+            
+            </div>
 
       
-          <!-- <h2>Desendant Elements</h2>
-        <em>
-            <p id="text1" class="textgroup">
-                Text 1:
-                Lorem ipsum dolor sit amet, 
-                consectetur adipisicing elit. Expedita omnis nostrum a 
-                voluptas id tempora animi debitis, iusto laborum 
-                eligendi possimus. Ducimus maxime sint facilis quibusdam 
-                unde doloremque nostrum velit?
-            </p>
-        </em>
-        
-        <em>
-            <p id="text2" class="textgroup">
-                Text 2:
-                Lorem ipsum dolor sit amet, 
-                consectetur adipisicing elit. Expedita omnis nostrum a 
-                voluptas id tempora animi debitis, iusto laborum 
-                eligendi possimus. Ducimus maxime sint facilis quibusdam 
-                unde doloremque nostrum velit?
-            </p>
-        </em>
+      </div>
 
-        <em>
-            <p id="text3" class="textgroup">
-                Text 3:
-                Lorem ipsum dolor sit amet, 
-                consectetur adipisicing elit. Expedita omnis nostrum a 
-                voluptas id tempora animi debitis, iusto laborum 
-                eligendi possimus. Ducimus maxime sint facilis quibusdam 
-                unde doloremque nostrum velit?
-            </p>
-        </em>
+      <script src="index.js"></script>
 
-        <em>
-            <p id="text4" class="textgroup">
-                Text 4:
-                Lorem ipsum dolor sit amet, 
-                consectetur adipisicing elit. Expedita omnis nostrum a 
-                voluptas id tempora animi debitis, iusto laborum 
-                eligendi possimus. Ducimus maxime sint facilis quibusdam 
-                unde doloremque nostrum velit?
-            </p>
-        </em>
-    </div>
-
-
-    <h1>Country Bucketlist</h1>
-
-    <ul>
-        <li>England</li>
-        <li>Indonasia</li>
-        <li>Canada</li>
-        <li>USA</li>
-    </ul>
-    
-    <ul>
-        <li>Nigeria</li>
-        <li>Tunisia</li>
-        <li>Ghana</li>
-        <li>Gabon</li>
-    </ul>
-
-
-
-
-    <form action="/submit-form" method="post">
-        
-       
-        <label for="username">Username: </label>
-
-        <input type="text"
-         id="username"
-         placeholder="Enter your username"
-         required>
-
-         <br><br>
-
-         <label for="password">Password: </label>
-
-         <input type="password"
-          id="password"
-          placeholder="Enter your password"
-          required>
-       
-          <br><br>
-
-          <label for="email">Email: </label>
-
-          <input type="email" 
-          id="email" 
-          name="email"
-          placeholder="example@gmail.com"
-          required>
-
-          <br><br>
-
-
-          <label for="quantity">Quantity: </label>
-
-          <input type="number"
-          id="quantity" min="1" 
-          max="11"
-          required>
-
-          <br><br>
-
-          <label for="phone">Phone Number: </label>
-
-          <input type="tel"
-          id="phone"
-          name="phone" 
-          pattern="[0-9]" 
-          minlength="11"
-          maxlength="11"
-          placeholder="xxx-xxx-xxx-xx"
-          required>
-
-          <br><br>
-
-          
-          <input type="checkbox" 
-          id="checkbox"
-          name="subcribe">
-
-          <label for="checkbox">Subcribe to Newsletter</label>
-
-          <br><br>
-
-          <input type="radio"
-          id="radio"
-          value="male">
-
-          <label for="radio">Male</label>
-
-          <input type="radio"
-          id="radio"
-          value="female">
-
-          <label for="radio">Female</label>
-
-
-          <br><br>
-
-          <label for="date">Date of birth: </label>
-
-          <input type="date" id="date"
-          name="date">
-
-          <br><br>
-
-          <label for="file">Select a file: </label>
-
-          <input type="file" id="file" 
-          accept=".jpeg, .png, .jpg, .svg"
-          name="file">
-
-          <br><br>
-
-          <button type="submit">Login</button>
-
-          <br><br><br>
-
-          <button type="button">General</button>
-          <input type="button" value="submit">
-
-          
-
-    </form>
-    
-    <h1>Authentication</h1>
-    
-    <form action="submit" method="post">
-    <label for="username1">Fullname: </label>
-
-        <input type="text"
-         id="username1"
-         placeholder="Enter your full name"
-         required>
-
-         <br><br>
-
-         
-
-          <label for="email1">Email: </label>
-
-          <input type="email" 
-          id="email1" 
-          name="email"
-          placeholder="example@gmail.com"
-          required>
-
-          <br><br>
-
-
-          
-
-          <label for="phone1">Phone Number: </label>
-
-          <input type="tel"
-          id="phone1"
-          name="phone" 
-          pattern="[0-9]" 
-          minlength="11"
-          maxlength="11"
-          placeholder="xxx-xxx-xxx-xx"
-          required>
-
-          <br><br>
-
-          <label for="location1">Location: </label>
-
-        <input type="text"
-         id="location1"
-         placeholder="Enter your Country"
-         required>
-
-         <br><br>
-
-          
-
-          <label for="password">Password: </label>
-
-         <input type="password"
-          id="password"
-          placeholder="Enter your password"
-          required>
-       
-         
-          <br><br>
-
-          <button type="submit">Login</button>
-
-        </form>
-
-
-
-        <h1>Bank Verification</h1>
-        <br>
-    <form action="submit" method="post">
-        <label for="username">Fullname: </label>
-
-        <input type="text"
-         id="username"
-         placeholder="Enter your full name"
-         required>
-
-         <br><br>
-
-         <label for="bvn">BVN: </label>
-
-          <input type="tel"
-          id="bvn"
-          minlength="11" 
-          maxlength="11"
-          required>
-
-          <br><br>
-
-
-         
-
-          <label for="email">Email: </label>
-
-          <input type="email" 
-          id="email" 
-          name="email"
-          placeholder="example@gmail.com"
-          required>
-
-          <br><br>
-
-          <label for="nin">NIN: </label>
-
-          <input type="tel"
-          id="nin"
-          minlength="11" 
-          maxlength="11"
-          required>
-
-          <br><br>
-
-          <label for="location">Location: </label>
-
-        <input type="text"
-         id="location"
-         placeholder="Enter your Country"
-         required>
-
-         <br><br>
-
-
-
-          
-
-          <label for="phone">Phone Number: </label>
-
-          <input type="tel"
-          id="phone"
-          name="phone" 
-          pattern="[0-9]" 
-          minlength="11"
-          maxlength="11"
-          placeholder="xxx-xxx-xxx-xx"
-          required>
-
-          <br><br>
-
-          <label for="file">Upload your picture: </label>
-
-          <input type="file" id="file" 
-          accept=".jpeg, .png, .jpg, .svg"
-          name="file">
-
-        
-       
-         
-          <br><br>
-
-          <button type="submit">Submit</button> -->
-
-          <script src="index.js"></script>
-
-
-
-
-
- 
 
 </body>
 

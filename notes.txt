@@ -1,0 +1,91 @@
+DOM (Document Object Model) Manipulation
+--------------------------------------------
+Modify structure
+Change style
+Add or remove element
+Respond to events (click e.t.c)
+Access elements (getElementById e.t.c)
+
+
+
+
+Arithmetic operators + * - /
+Comparison operators ==  != > <
+Logical operators 
+            AND - && both of them
+            OR - || 0ne of them
+            NOT - ! either one of them or none
+
+Assignment Operators 
+
+            assign =
+            add and assign +=
+            subtract and assign -=
+
+Unary Operators 
+
+            decrement --
+            increment ++
+
+Ternary Operators
+
+            condition ? value1 : value2
+
+
+CONTROL FLOW
+      1. Conditional Statement if...else statement
+      2. Loops - Its loops through until a condition is met for,while, do..while
+      
+
+STRING METHODS
+      .slice()
+      .replace()
+      .toLowerCase()
+      .toUpperCase()
+      .split()
+      .repeat()
+      .indexOf()
+      .subString()
+      .lastIndexOf()
+
+NUMBER METHODS 
+      .toFixed()
+      Number.isInteger()
+      Math.floor()
+      Math.max()
+
+
+ARRAYS AND FUNCTIONS
+--------------------------
+
+ARRAYS 
+
+similar items 
+Items have an index number
+Arrays count from zero (0)
+you can add items
+you can remove items
+you can change items
+
+
+
+FUNCTIONS
+
+takes input (parameters or argument)
+give output
+helps to divide your code into modules (use it to organize your code)
+it is reuseable
+makes your code clean
+items in an array are called elements
+
+Function METHODS
+
+.push() - adds a new element to the array
+.pop() - removes the last element from the array 
+.splice() - helps to replace items in an array
+.concat() - joins two arrays together
+.map()  - helps you map out items in an array
+.sort() - sorts elements
+.filter() - filters out elements that meets certain conditions
+
+
