@@ -108,18 +108,18 @@
 
 // TODO: DOM (Document Object Model) Manipulation allows you change the structure and style of a web page without reloading it.
 
-const paragraph = document.getElementById('myparagraph');
+// const paragraph = document.getElementById('myparagraph');
 
-const button = document.getElementById('mybutton')
+// const button = document.getElementById('mybutton')
 
-button.addEventListener('click',function(){
+// button.addEventListener('click',function(){
 
-    paragraph.textContent = "This is the new content from JavaScript"
-})
+//     paragraph.textContent = "This is the new content from JavaScript"
+// })
 
 
-const D = document.getElementById('testdiv')
-const P = document.querySelector('.testp')
+// const D = document.getElementById('testdiv')
+// const P = document.querySelector('.testp')
 
 
 // const createSomething = document.createElement('p')
@@ -265,13 +265,13 @@ const P = document.querySelector('.testp')
 //   }
 
 
-  const Billionaires = ["Elvis", "Yahya", "Funmi", "Micheal", "Comfort", "Abimbola"]
+//   const Billionaires = ["Elvis", "Yahya", "Funmi", "Micheal", "Comfort", "Abimbola"]
 
-  for ( const richPeople of Billionaires ){
+//   for ( const richPeople of Billionaires ){
 
-      console.log(richPeople + " is a rich person ")
+//       console.log(richPeople + " is a rich person ")
 
-}
+// }
 
 
 
@@ -373,4 +373,102 @@ const P = document.querySelector('.testp')
 
 // // TODO: change this code 
 
+
+// Named Functions
  
+// function greet(name) {
+//     console.log(`Welome back ${name1} and ${name2}`)
+// }
+
+
+// greet("Elvis", "Abimbola")
+
+
+// ANONYMOUS FUNCTION
+
+// const talk = function(name){
+//     console.log(`Hello ${name}`)
+// } 
+
+// talk("Micheal")
+
+
+
+// ARROW FUNCTION
+
+// const greeting = (name3) => `Hello ${name3}`
+
+// greeting("Busayo")
+
+
+// Class - OOP
+
+// const Asia = {
+    
+//     country: ["China", "Japan", "North K", "South K"],
+//     language: ["Mandarin", "Japanese", "NK", "SK"]
+// }
+
+
+// const person = {
+
+//     greet(){
+
+//         console.log("Hello")
+//     }
+// } 
+
+// const John = object.create(person)
+// John.greet()
+
+
+const person = {
+
+    firstName: "Elvis",
+    lastName: "Ngerem",
+    Address: {
+        city: "New York",
+        country: "USA"
+    },
+    age: 27
+}
+
+// Destructuring Assignment
+
+const {firstName, lastName, Address:{city,country}, age} = person;
+
+console.log(firstName)
+console.log(lastName)
+console.log(age)
+
+
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}

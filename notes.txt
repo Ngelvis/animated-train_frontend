@@ -89,3 +89,52 @@ Function METHODS
 .filter() - filters out elements that meets certain conditions
 
 
+TYPES OF FUNCTIONS 
+----------------------
+Functions allow you to divide your code into modules and makes your code clean.
+Functions can be stand alone or nested.
+
+1.Named Functions - key word "function" & "name" (can be defined anywhere in your code)
+2. Anonymous Functions - 
+      They are decleared without a name  
+      they are callback Functions or immediately invoked
+      They do not require  
+
+3. Arrow Functions
+      They have a concise syntax 
+      And are Anonymous by nature
+
+
+
+FUNCTION HOISTING
+      Helps to call a function before declaration
+
+
+
+OBJECT ORIENTED PROGRAMMING (OOP)
+      i. based on objects
+
+      ii. contains declaration
+
+      iii. organize your code into objects that interact with each other 
+
+      iv. METHODS
+
+      v. Class ===> Objects ===> Instances of that class
+
+      vi.Encapsulation 
+      
+      vii. Inheritance
+            it allow you to inherit properties and methods of another Class
+            it allows code reuseable
+            Allows us to declare hierarchy of a class
+
+      viii. Polymorphism
+            it allow objects of different classes to be treated as an object of a common super class.
+            it allows for flexibility and extensibility of your software design
+
+
+
+
+OBJECT DESTRUCTURING
+
