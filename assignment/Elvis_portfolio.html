@@ -126,38 +126,40 @@
         <div class="p-20">
             <h1 class="text-4xl font-bold font-mono p-5">Hello! My name is <span class="text-gray-600 text-8xl">ELVIS NGEREM.</span></h1>
             <h1 class="text-4xl font-bold p-5">I'm a Full Stack Developer and an Electrical Engineer.</h1>
-            <a href="https://drive.google.com/file/d/1xdUqJSkQ69TGbCXmsXqb_wb8roUt55OO/view?usp=drive_link" class=" block mt-4 bg-gray-600 text-center text-white px-6 py-3 hover:text-gray-300" target="_blank">Download CV</a>
+            <a href="https://drive.google.com/file/d/1xdUqJSkQ69TGbCXmsXqb_wb8roUt55OO/view?usp=drive_link" class=" block mt-4 bg-gray-600 text-center text-white px-6 py-3 hover:text-gray-300" target="_blank" id="bio">Download CV</a>
         </div>
 
 
 
     
         <!-- Bio -->
-        <div class="mt-8" id="bio">
+        <div class="mt-8">
             <h2 class="text-2xl font-bold text-center">Bio</h2>
             <p class="mt-4 text-lg text-justify">
                 As a frontend developer with a master's degree in electrical engineering, I bring a unique blend of technical expertise and creativity to my work. 
                 My background in electrical engineering has equipped me with strong problem-solving skills and a deep understanding of technology. I am passionate about creating elegant and user-friendly web experiences. With proficiency in HTML, CSS, JavaScript, and various frontend frameworks, 
                 I strive to build responsive and visually appealing websites that meet both user needs and business objectives. My journey into frontend development began during my graduate studies, where I discovered my passion for web development while working on projects 
                 that involved designing and implementing user interfaces for embedded systems.
+                <span id="skills"></span>
             </p>
-            
         </div>
         
 
 
         <!-- Skills -->
-        <div class="mt-8" id="skills">
+        <div class="mt-8">
             <h2 class="text-2xl font-bold text-center">Skills</h2>
             <ul class=" grid grid-flow-row">
                 <li class="mt-4 text-lg">HTML</li>
                 <li class="mt-2 text-lg">CSS</li>
                 <li class="mt-2 text-lg">JavaScript</li>
+                <li class="mt-2 text-lg">React</li>
                 <li class="mt-2 text-lg">Python</li>
                 <li class="mt-2 text-lg">AutoCAD</li>
                 <li class="mt-2 text-lg">Matlab</li>
             </ul>
 
+            <!-- Slide show -->
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
@@ -184,7 +186,7 @@
             </div>
                 <br>
                 
-                <div style="text-align:center">
+                <div style="text-align:center" id="project">
                   <span class="dot" onclick="currentSlide(1)"></span> 
                   <span class="dot" onclick="currentSlide(2)"></span> 
                   <span class="dot" onclick="currentSlide(3)"></span> 
@@ -195,7 +197,7 @@
 
 
         <!-- Projects -->
-        <div class="mt-8" id="project">
+        <div class="mt-8">
 
             <h2 class="text-2xl font-bold text-center">Projects</h2>
             <div class="mt-4">
@@ -220,51 +222,44 @@
                     This game was created solo in 2 days for a hack-a-thon.
                 </p>
                 <p class="mt-2 text-lg">Technologies: C#, Unity, WebGL</p>
-                <a href="https://drive.google.com/file/d/10ZAoP56I72KK-oZld7l0WGn5P_RJwkDA/view?usp=drive_link" class="mt-4 bg-gray-600 text-white px-6 py-3 block text-center font-mono hover:text-gray-300" target="_blank">View</a>
+                <a href="https://drive.google.com/file/d/10ZAoP56I72KK-oZld7l0WGn5P_RJwkDA/view?usp=drive_link" class="mt-4 bg-gray-600 text-white px-6 py-3 block text-center font-mono hover:text-gray-300" target="_blank" id="contact">View</a>
             </div>
 
         </div>
-        
 
 
 
         <!-- Contact form -->
-        <div class="mt-8" id="contact">
+        <div class="mt-8">
             <h2 class="text-2xl font-bold text-center">Contact Me</h2>
-            <form class="mt-4">
+            <form id="contactForm" class="mt-4">
                 <div class="mb-4">
                     <label for="name" class="block text-lg">Name</label>
-                    <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-md border-gray-300 focus:outline-none focus:border-grbg-gray-600" placeholder="Enter your name" required>
-                </div>
-                <div class="mb-4">
-                    <label for="phone" class="block text-lg">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 rounded-md border-gray-300 focus:outline-none focus:border-grbg-gray-600" placeholder="xxx-xxx-xxx-xx" minlength="1" maxlength="11">
+                    <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-md border-gray-300 focus:outline-none focus:border-gray-600" placeholder="Enter your name" required>
                 </div>
                 <div class="mb-4">
                     <label for="mail" class="block text-lg">Email</label>
-                    <input type="email" id="mail" name="mail" class="w-full px-4 py-2 rounded-md border-gray-300 focus:outline-none focus:border-grbg-gray-600" placeholder="Enter your email" required>
-                </div>
-                <div class="mb-4">
-                    <label for="location" class="block text-lg">Location</label>
-                    <input type="text" id="location" name="location" class="w-full px-4 py-2 rounded-md border-gray-300 focus:outline-none focus:border-grbg-gray-600" placeholder="Where are you located?">
+                    <input type="email" id="mail" name="mail" class="w-full px-4 py-2 rounded-md border-gray-300 focus:outline-none focus:border-gray-600" placeholder="Enter your email" required>
                 </div>
                 <div class="mb-4">
                     <label for="message" class="block text-lg">Message</label>
-                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded-md border-gray-300 focus:outline-none focus:border-grbg-gray-600" placeholder="Type a message"></textarea>
-                </div>
-                <div class="mb-4">
-                    <input type="checkbox" id="subscribe" name="subscribe" class="mr-2">
-                    <label for="subscribe" class="text-lg">Subscribe to newsletter</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded-md border-gray-300 focus:outline-none focus:border-gray-600" placeholder="Type a message" required></textarea>
                 </div>
                 <button type="submit" class="px-6 py-3 bg-gray-600 text-white font-mono hover:text-gray-300">Submit</button>
             </form>
         </div>
 
+
+
+  
+        
+
+
     </div>
     
               
 
-    <!-- <script type="module" src="script.js"></script> -->
+    <script type="module" src="script.js"></script>
 
     <script>
         let slideIndex = 1;
