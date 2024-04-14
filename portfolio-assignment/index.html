@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elvis - Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- NAVIGATION BAR -->
+      <nav class="nav">
+        <a href="/" class="logo"> Portfo<span class="highlighted">lio</span></a>
+
+        <div class="nav-links">
+          <a href="#home" class="nav-item nav-item-active">Home</a>
+          <a href="#about" class="nav-item">About</a>
+          <a href="#services" class="nav-item">Services</a>
+          <a href="#projects" class="nav-item">projects</a>
+          <a href="#contact" class="nav-item">contact</a>
+          <a href="https://github.com/Ngelvis" target="_blank" class="nav-item">Github</a>
+        </div>
+
+        <div class="toggler">
+          <span class="line"></span><span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero container" id="home">
+      <div class="hero-info">
+        <h3>Hello, my name is</h3>
+        <h1 class="title">Elvis <span class="highlighted">Ngerem</span></h1>
+        <p class="hero-description">I am a Web Developer.</p>
+        <a href="#services" class="btn hero-btn">Services</a>
+      </div>
+    </section>
+
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about container" id="about">
+      <div class="about-img">
+        <img src="/images/Profile-Photo.jpeg" alt="Elvis Ngerem" />
+      </div>
+
+      <div class="about-info">
+        <h2 class="secondary-title">About Me</h2>
+
+        <p class="description">
+          As a frontend developer with a master's degree in electrical engineering, I bring a unique blend of technical expertise and creativity to my work. 
+          My background in electrical engineering has equipped me with strong problem-solving skills and a deep understanding of technology.  
+        </p>
+
+        <p class="description">
+          I am passionate about creating elegant and user-friendly web experiences. With proficiency in HTML, CSS, JavaScript, and various frontend frameworks, 
+          I strive to build responsive and visually appealing websites that meet both user needs and business objectives.
+        </p>
+
+        <p class="description">
+          My journey into frontend development began during my graduate studies, where I discovered my passion for web development while working on projects 
+          that involved designing and implementing user interfaces for embedded systems.
+        </p>
+
+        <a href="#" class="btn btn-secondary">More</a>
+      </div>
+    </section>
+
+
+
+    <!-- SERVICES SECTION -->
+    <section id="serve">
+
+
+      <div class="services container" id="services">
+        <div class="services-header">
+          <h2 class="secondary-title">Services</h2>
+        </div>
+  
+        <div class="grid services-grid">
+          <div class="grid-item services-item">
+            <i class="fa-solid fa-computer"></i>
+            <h3>Web Development</h3>
+            <p class="description">
+              Unlocking digital excellence with cutting-edge technologies: 
+              HTML5, CSS3, JavaScript, React, and more for stunning website creations!
+            </p>
+          </div>
+  
+          <div class="grid-item services-item">
+            <i class="fa-solid fa-meteor"></i>
+  
+            <h3>SEO & Marketing</h3>
+            <p class="description">
+              I can elevate your online presence with my strategic SEO & Marketing prowess using 
+              Google Analytics, keyword optimization, and content strategies for maximum impact!
+            </p>
+          </div>
+  
+          <div class="grid-item services-item">
+            <i class="fa-solid fa-pen-nib"></i>
+            <h3>UI/UX Design</h3>
+            <p class="description">
+              Crafting seamless digital experiences with intuitive UI/UX design: 
+              Adobe XD, Figma, user research, and interactive prototypes for unforgettable user journeys!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects container" id="projects">
+      <div class="projects-header">
+        <h2 class="secondary-title">Projects</h2>
+
+        <div class="projects-tab">
+          <button class="projects-tab-btn projects-tab-btn-active" id="all">
+            All
+          </button>
+          <button class="projects-tab-btn" id="design">Web Dev</button>
+          <button class="projects-tab-btn" id="seo">SEO</button>
+          <button class="projects-tab-btn" id="ui-ux">UI/UX</button>
+        </div>
+      </div>
+
+      <div class="grid projects-grid">
+        <div class="grid-item projects-item all design">
+          <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        </div>
+        <div class="grid-item projects-item all design">
+          <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=1812&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        </div>
+        <div class="grid-item projects-item all seo">
+          <img src="https://plus.unsplash.com/premium_photo-1661678060948-b8d1d293889a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        </div>
+        <div class="grid-item projects-item all seo">
+          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1902&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        </div>
+        <div class="grid-item projects-item all ui-ux">
+          <img src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        </div>
+        <div class="grid-item projects-item all ui-ux">
+          <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- CONTACT SECTION -->
+    <section class="container contact" id="contact">
+      <div class="contact-info">
+        <h2 class="secondary-title">Contact</h2>
+        <div class="info-container">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-info-data">
+              <h3>Address</h3>
+              <p>Abuja, Nigeria.</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-info-data">
+              <h3>Email</h3>
+              <p>elvisngerem@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="contact-info-data">
+              <h3>Phone</h3>
+              <p>+234-810-581-4138</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Name" required/>
+          <input type="email" placeholder="Email" id="e" required/>
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <button class="btn submit-btn" onclick="validate()">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <p>&copy; 2024 Elvis Ngerem All Right Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
